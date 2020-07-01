@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>带你畅游诗词天地</title>
+		<!-- 导入css文件-->
+		<link href="css/ybdc.css" rel="stylesheet" type="text/css"/>
+		<!-- 导入图片轮回播放的js文件-->
+		<script type="text/javascript" src="js/img_gundong.js"></script>
+	</head>
+	<body onload = "run();"><!-- 调用js文件中的run函数让图片轮回播放-->
+		<div class="heard" id="top">
+			<img src="img/lol_heard.jpg" width="100%" height="300px">
+		</div>
+		<div id="nav"><!-- 超链接的地址  让它在新的页面打开-->
+			<span><a href="#content">功能说明</a></span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="#jie">界面展示</a></span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="#ziyuan">诗词推荐</a></span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="">背诵攻略</a></span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="">社区中心</a></span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span><a href="">意见反馈</a> </span>
+			<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<!--标签链接，链接到下面的文字介绍，href命名必须是#开头 -->
+			<span><a href="">联系我们</a> </span>
+		</div>
+		<div id="content">
+			<div class="content_left"><!-- 4张滚动的图片-->
+				<div id="butong_net_left" style="overflow:hidden;width:500px;">
+				<table cellpadding="0" cellspacing="0" border="0">
+				<tr><td id="butong_net_left1" valign="top" align="center">
+				<table cellpadding="2" cellspacing="0" border="0">
+				<tr align="center">
+				<td><a href="https://yz.chsi.com.cn/"><img src="img/w0.png" height="350px"></td></a>
+				<td><a href="https://yz.chsi.com.cn/"><img src="img/w1.png" height="350px"></td></a>
+					<td><a href="https://yz.chsi.com.cn/"><img src="img/w2.png" height="350px"></td></a>
+					<td><a href="https://yz.chsi.com.cn/"><img src="img/w3.png" height="350px"></td></a>
+					<td><a href="https://yz.chsi.com.cn/"><img src="img/w4.png" height="350px"></td></a>
+					<td><a href="https://yz.chsi.com.cn/"><img src="img/w5.png" height="350px"></td></a>
+
+				</tr>
+				</table>
+				</td>
+				<td id="butong_net_left2" valign="top"></td>
+				</tr>
+				</table>
+				</div>
+				<script>//让图片滚动的js程序
+				var speed=20//速度数值越大速度越慢
+				butong_net_left2.innerHTML=butong_net_left1.innerHTML
+				function Marquee3(){
+				if(butong_net_left2.offsetWidth-butong_net_left.scrollLeft<=0)
+				butong_net_left.scrollLeft-=butong_net_left1.offsetWidth
+				else{
+				butong_net_left.scrollLeft++
+				}
+				}
+				var MyMar3=setInterval(Marquee3,speed)
+				butong_net_left.οnmοuseοver=function() {clearInterval(MyMar3)}
+				butong_net_left.οnmοuseοut=function() {MyMar3=setInterval(Marquee3,speed)}
+				</script>
+
+		</div>
+			<div class="content_right">
+				<h4 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/biao.png" />&nbsp;功能说明</h4>
+				<hr color="#8A2BE2" width="420px"/>
+				<ul>
+					<li><a href="css/1.html" target="_blank">视频演示--功能介绍</a></li>
+					<li><a href="css/2.html"  target="_blank">查看注解--功能介绍</a></li>
+					<li><a href=" css/3.html" target="_blank">诗词训练--功能介绍</a></li>
+					<li><a href=" css/4.html" target="_blank">添加诗词--功能介绍</a></li>
+					<li><a href=" css/5.html" target="_blank">查看题库--功能介绍</a></li>
+					<li><a href=" css/6.html" target="_blank">娱乐休闲--功能介绍</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="ad">
+			<h4 align="left"><img src="img/biao.png" /><a name="jie">界面展示</a></h4>
+			<hr color=#A52A2A/>
+			<!--轮回播放的第一张图片 设置图片尺寸-->
+			<a href="https://www.sparke.cn/" target="_blank"><img id="banner" alt="banner" src="img/x1.jpg" width="600px" height="350px"></a>
+		</div>
+		<div id="footer" class="book">
+			<h4 align="left"><img src="img/biao.png" />&nbsp;&nbsp;<a name="ziyuan">诗词推荐</a></h4>
+			<hr color="cadetblue"/>
+			<div id="ft_left">
+				<ul>
+					<li>《宋词鉴赏辞典》</li>
+					<li>《唐诗鉴赏辞典》</li>
+					<li>《饮冰室合集》</li>
+				</ul>	
+			</div>
+			<div id="ft_center">
+				<ul>
+					<li>《诗词格律》</li>
+					<li>《词学十讲》</li>
+					<li>《词学季刊》</li>
+				</ul>
+			</div>
+			<div id="ft_right">
+				<ul>
+					<li>《辞海》</li>
+					<li>《花间集》</li>
+					<li>《古诗源》</li>
+				</ul>
+			</div>
+		</div>
+
+		
+	</body>
+</html>

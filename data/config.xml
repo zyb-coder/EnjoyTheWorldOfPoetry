@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <login username="admin" passwd="123456" count="1">
+           <!--  count-颜色列表索引值
+                 color-rgb颜色值
+                 VideoState-视频播放开关
+                 VideoWay-视频播放方式 T本地播放 F软件播放
+                 开头视频的播放速度Velocity
+              -->
+        <color>173,216,230</color>
+        <VideoState>True</VideoState>
+        <VideoWay>Flase</VideoWay>
+        <Velocity>48</Velocity>
+    </login>
+</catalog>
